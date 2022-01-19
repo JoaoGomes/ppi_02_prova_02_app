@@ -9,9 +9,6 @@ export const loginStyle = StyleSheet.create({
         flexDirection: "row",
         backgroundColor: "#0000ffaa"
     },
-    view: {
-        width: "80%"
-    },
     cardTitle: {
         color: "#0000ffaa"
     }
