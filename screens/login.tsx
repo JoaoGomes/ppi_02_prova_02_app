@@ -3,9 +3,13 @@ import { Alert, SafeAreaView } from 'react-native';
 import { Button, Card, TextInput } from 'react-native-paper';
 import { loginStyle } from '../components/login.style';
 
-export const LoginScreen = () => {
+interface LoginScreenProps {
+    navigation: any;
+}
 
-    const login = () => Alert.alert("Login");
+export const LoginScreen = (props: LoginScreenProps) => {
+
+    const login = () => props.navigation.navigate("Home");
 
     return (
         <SafeAreaView style={loginStyle.content}>
